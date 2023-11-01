@@ -3,6 +3,7 @@ import CountryCard from './CountryCard';
 import Header from './Header';
 import Filter from './Filter';
 import Search from './Search';
+import CountryDetail from './CountryDetail';
 
 
 const HomePage: React.FC = () => {

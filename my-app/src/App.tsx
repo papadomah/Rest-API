@@ -1,11 +1,22 @@
 import React from 'react';
-import HomePage from './components/HopmePage';
+import { Route, Routes , BrowserRouter } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import CountryDetail from './components/CountryDetail';
+
+
+
 
 const App: React.FC = () => {
   return (
+    <BrowserRouter>
     <div className='app'>
-      <HomePage />
-    </div>
+        <Routes>
+        <Route path="/" element = {<HomePage />} />
+        <Route path="/country-details" element ={<CountryDetail countries={countries} />} />
+        </Routes>       
+        </div>
+    </BrowserRouter>
+    
   );
 };
 
